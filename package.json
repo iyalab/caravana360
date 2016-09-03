@@ -1,0 +1,26 @@
+{
+  "name": "caravana360",
+  "version": "1.0.0",
+  "description": "Aplicacion para tours virtuales multiusuario",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {
+     "express": "*",
+     "socket.io": "*"
+  },
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://orejuelajd@bitbucket.org/orejuelajd/caravana360.git"
+  },
+  "engines":{
+    "node": "4.2.6",
+    "npm": "3.5.2"
+  },
+  "author": "Juan David Orejuela Bolaños",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/orejuelajd/caravana360#readme"
+}

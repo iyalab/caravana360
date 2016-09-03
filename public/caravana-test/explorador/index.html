@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Explorador - Caravana360</title>
+    <meta name="description" content="360&deg; Image Gallery - A-Frame">
+    <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js"></script>
+    <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+    <script src="set-image.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="city" crossorigin="anonymous" src="https://bytebucket.org/orejuelajd/caravana360-recursos/raw/13a7537ab7fd75a876a59686452a61a2687844e0/caravana-test/city.jpg">
+        <img id="cubes" crossorigin="anonymous" src="https://bytebucket.org/orejuelajd/caravana360-recursos/raw/13a7537ab7fd75a876a59686452a61a2687844e0/caravana-test/cubes.jpg">
+        <img id="sechelt" crossorigin="anonymous" src="https://bytebucket.org/orejuelajd/caravana360-recursos/raw/13a7537ab7fd75a876a59686452a61a2687844e0/caravana-test/sechelt.jpg">
+      </a-assets>
+      <!-- Imagen de 360 grados. -->
+      <a-sky id="image-360" radius="10" src="#sechelt"></a-sky>
+    </a-scene>
+
+      <script src="/node_modules/socket.io-client/socket.io.js"></script>
+      <script src="/global/js/jquery.min.js"></script>
+      <script src="/global/js/soundjs.min.js"></script>
+      <!--<script src="/global/js/three/three.js"></script>-->
+      <script src="/global/js/three/StereoEffect.js"></script>
+      <script src="/global/js/three/DeviceOrientationControls.js"></script>
+      <script src="/global/js/three/ColladaLoader2.js"></script>
+      <script src="/global/js/three/OBJLoader.js"></script>
+      <script src="/global/js/DesktopControls.js"></script>
+      <script src="/global/js/screenfull.js"></script>
+      <!-- The Game -->
+      <script src="Game.js"></script>
+      <script>
+          Game.setup();
+      </script>
+  </body>
+</html>
