@@ -1,0 +1,8 @@
+{
+  "name": "Caravana360",
+  "description": "Aplicacion para tours virtuales multiusuario",
+  "repository": "https://orejuelajd@bitbucket.org/orejuelajd/caravana360.git",
+  "logo": "",
+  "keywords": ["node", "express", "angular", "MEAN", "REST", "API"],
+  "addons": []
+}
