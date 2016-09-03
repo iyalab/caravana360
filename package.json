@@ -1,7 +1,7 @@
 {
   "name": "caravana360",
   "version": "1.0.0",
-  "description": "Despliegue cliente-servidor de escenarios en 360",
+  "description": "Aplicacion para tours virtuales multiusuario",
   "main": "server.js",
   "dependencies": {},
   "devDependencies": {
