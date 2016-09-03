@@ -17,8 +17,7 @@
     "url": "git+https://orejuelajd@bitbucket.org/orejuelajd/caravana360.git"
   },
   "engines":{
-    "node": "4.2.6",
-    "npm": "3.5.2"
+    "node": "4.2.6"
   },
   "author": "Juan David Orejuela Bolaños",
   "license": "ISC",
