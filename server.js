@@ -8,7 +8,7 @@ var server_port = process.env.PORT || 8000;
 var server_host = '0.0.0.0';
 
 // Ruta por defecto
-app.use(express.static(__dirname + '/public/'));
+app.use(express.static(__dirname + '/public'));
 
 // Rutas para la caravana Test
 app.use( '/public/caravana-test/explorador', express.static( __dirname +'/caravana-test/explorador' ));
