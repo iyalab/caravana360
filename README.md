@@ -18,10 +18,10 @@ node server.js
 ## Recordatorios
 
 * El repositorio donde se encuentran almacenada la multimedia que se muestra para los recorridos virtuales esta en el siguiente repositorio: 
-[https://bitbucket.org/orejuelajd/caravana360-recursos]
+https://bitbucket.org/orejuelajd/caravana360-recursos
 
 * Este es el link para acceder al servicio web y portal para usuarios de Caravana360:
-[http://caravana360.herokuapp.com/]
+http://caravana360.herokuapp.com/
 
  
 
