@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Explorador - Caravana360</title>
+    <meta name="description" content="360&deg; Image Gallery - A-Frame">
+    <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe.min.js"></script>
+    <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-layout-component@3.0.1"></script>
+    <script src="https://npmcdn.com/aframe-template-component@3.1.1"></script>
+    <script src="set-image.js"></script>
+  </head>
+  <body>
+    <button id="play-button">Play</button>
+    <a-scene>
+      <a-assets>
+        <!--<img id="city" crossorigin="anonymous" src="https://bytebucket.org/orejuelajd/caravana360-recursos/raw/13a7537ab7fd75a876a59686452a61a2687844e0/caravana-test/city.jpg">
+        <img id="cubes" crossorigin="anonymous" src="https://bytebucket.org/orejuelajd/caravana360-recursos/raw/13a7537ab7fd75a876a59686452a61a2687844e0/caravana-test/cubes.jpg">
+        <img id="sechelt" crossorigin="anonymous" src="https://bytebucket.org/orejuelajd/caravana360-recursos/raw/13a7537ab7fd75a876a59686452a61a2687844e0/caravana-test/sechelt.jpg">-->
+
+        <video id="inequidad" autoplay loop="true" src="https://bitbucket.org/orejuelajd/caravana360-recursos/raw/59122aa8e353e0f76f0f67012a98ab25bff105ef/caravana-megatendencias/inequidad.mp4">
+        <!--<video id="sobrepoblacion" autoplay loop="true" src="https://bitbucket.org/orejuelajd/caravana360-recursos/raw/03b71e57ed8574221f5bdfecfcf2edf7d26f7d72/caravana-megatendencias/sobrepoblacion.mp4">
+        <video id="contaminacion-china" autoplay loop="true" src="https://bitbucket.org/orejuelajd/caravana360-recursos/raw/03b71e57ed8574221f5bdfecfcf2edf7d26f7d72/caravana-megatendencias/contaminacion-china.mp4">-->
+
+      </a-assets>
+      <!-- Imagen de 360 grados. -->
+      <!--<a-sky id="image-360" radius="10" src="#cubes"></a-sky>-->
+      <a-videosphere id="video-360" src="#inequidad"></a-videosphere>
+    </a-scene>
+
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="/global/js/jquery.min.js"></script>
+      <script src="/global/js/soundjs.min.js"></script>
+      <!--<script src="/global/js/three/three.js"></script>-->
+      <script src="/global/js/three/StereoEffect.js"></script>
+      <script src="/global/js/three/DeviceOrientationControls.js"></script>
+      <script src="/global/js/three/ColladaLoader2.js"></script>
+      <script src="/global/js/three/OBJLoader.js"></script>
+      <script src="/global/js/DesktopControls.js"></script>
+      <script src="/global/js/screenfull.js"></script>
+      <!-- The Game -->
+      <script src="Game.js"></script>
+      <script>
+          Game.setup();
+      </script>
+  </body>
+</html>

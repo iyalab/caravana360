@@ -13,6 +13,9 @@ app.use(express.static(__dirname + '/public'));
 // Rutas para la caravana Test
 app.use( '/public/caravana-test/explorador', express.static( __dirname +'/caravana-test/explorador' ));
 app.use( '/public/caravana-test/guia', express.static( __dirname +'/caravana-test/guia' ) );
+// Rutas para la caravana de megatendencias
+app.use( '/public/caravana-megatendencias/explorador', express.static( __dirname +'/caravana-megatendencias/explorador' ));
+app.use( '/public/caravana-megatendencias/guia', express.static( __dirname +'/caravana-megatendencias/guia' ) );
 
 // binding to 0.0.0.0 allows connections from any other computer in the network
 // to your ip address
